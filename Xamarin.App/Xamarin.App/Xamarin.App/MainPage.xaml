@@ -4,8 +4,8 @@
              xmlns:local="clr-namespace:Xamarin.App"
              x:Class="Xamarin.App.MainPage">
 
-	<Label Text="{Binding Descricao}" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <StackLayout>
+        <Entry Text="{Binding SeachTerm}"/>
+        <Button Text="Pesquisar" Command="{Binding SearchCommand}"/>
+    </StackLayout>
 </ContentPage>
